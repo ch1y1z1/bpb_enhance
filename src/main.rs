@@ -32,7 +32,7 @@ fn main() {
 
         let window_options = WindowOptions {
             window_bounds: Some(WindowBounds::Windowed(Bounds::new(
-                point(px(0.), px(0.)),
+                point(px(100.), px(100.)),
                 size(px(700.), px(240.)),
             ))),
             window_min_size: Some(size(px(520.), px(220.))),
