@@ -41,9 +41,6 @@ jobs:
           $out = "dist"
           New-Item -ItemType Directory -Force -Path $out | Out-Null
           Copy-Item "target\release\bpb_helper.exe" $out\
-          if (Test-Path "target\release\bpb_helper.pdb") {
-            Copy-Item "target\release\bpb_helper.pdb" $out\
-          }
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
